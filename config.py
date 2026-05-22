@@ -20,5 +20,9 @@ SUPPORTED_EXTENSIONS = {".pptx", ".pdf", ".docx"}
 
 EMBEDDING_MODEL = "jhgan/ko-sroberta-multitask"
 
+# Claude Vision (이미지 슬라이드 설명용) - Claude Code 환경의 ANTHROPIC_API_KEY 자동 사용
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+VISION_MODEL = "claude-haiku-4-5"  # 배치 이미지 처리용 (비용 효율)
+
 CHUNK_SIZE = 500
 CHUNK_OVERLAP = 50
