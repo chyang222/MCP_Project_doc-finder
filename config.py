@@ -17,10 +17,8 @@ WATCH_FOLDER = os.environ.get("DOC_FINDER_FOLDER", str(Path.home() / "Documents"
 
 SUPPORTED_EXTENSIONS = {".pptx", ".pdf", ".docx"}
 
-# 임베딩 모델 (Claude or OpenAI)
-EMBEDDING_PROVIDER = os.environ.get("EMBEDDING_PROVIDER", "openai")  # "openai" | "claude"
-OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
-ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+
+EMBEDDING_MODEL = "jhgan/ko-sroberta-multitask"
 
 CHUNK_SIZE = 500
 CHUNK_OVERLAP = 50
